@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa con piscina</title>
+    <link rel="stylesheet" href="visualizza_casa.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png">
+        <ul class="menu">
+            <li><a href="catalogo.html">Torna alle case in catalogo</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="casa_piscina1.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="casa_piscina2.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="casa_piscina3.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="casa_piscina4.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="casa_piscina5.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="casa_piscina6.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="casa_piscina7.jpg" alt="Casa">
+            </div>
+        </div>
+
+        <p>Scopri il lusso e il comfort in questa casa con piscina, un'oasi di tranquillità e divertimento. Con una spaziosa metratura di 300 mq, 
+            questa residenza vanta 4 camere da letto e 3 bagni, offrendo ampio spazio per te e i tuoi ospiti.</p>
+            <p>Ogni dettaglio è curato con attenzione per garantire un'esperienza indimenticabile. Soggiorna in questo rifugio esclusivo, dove la comodità si fonde con il lusso,
+            creando il luogo perfetto per una vacanza da sogno.
+            Amessi animali;
+            Max. 10 persone</p>
+
+
+        <form class="booking-form">
+            <h2>Prenota la tua permanenza</h2>
+
+            <div class="date-input">
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" oninput="updateTotal()">
+            </div>
+
+            <div class="date-input">
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" oninput="updateTotal()">
+            </div>
+
+            <label for="total-price">Totale:</label>
+            <span id="total-price">0</span> Euro
+
+            <button type="button" onclick="book()" class="button">Prenota</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="visualizza_casa.js"></script>
+
+</body>
+</html>

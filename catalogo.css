@@ -1,0 +1,170 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 15px 28px;
+  background: #326C7C;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Header */
+
+.header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+
+.header img {
+  margin-right: -40px;
+  margin-left: 42px;
+}
+
+
+.menu {
+  width: 100%;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  color: #000;
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #326C7C; /* Cambia il colore al passaggio del mouse */
+}
+
+.cta {
+  display: flex;
+  gap: 30px;
+}
+
+
+/* Corpo */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 120px 20px 20px;
+  margin-top: 45px;
+}
+
+.house-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.house {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.house img {
+  max-width: 300px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.house-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.house h2 {
+  margin-bottom: 5px;
+}
+
+.house-description {
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.booking-link {
+  display: block;
+  margin-top: auto;
+  text-decoration: none;
+  background-color: #326C7C;
+  color: #fff;
+  padding: 8px 12px; 
+  border-radius: 5px;
+  margin-left: auto; 
+}
+
+.booking-link:hover {
+  background-color: #2D5661; /* Cambia il colore al passaggio del mouse */
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border;
+}
+
+
+@media only screen and (max-width: 320px) {
+  .header {
+    padding: 10px; 
+    height: 60px; 
+  }
+
+  .menu li a {
+    padding: 8px; 
+  }
+
+  .container {
+    padding: 60px 5px 20px; 
+    margin-top: 15px; 
+    margin-right: 10px;
+  }
+
+  .house {
+    padding: 15px; 
+  }
+
+  .house img {
+    margin-left: 0px;
+    margin-bottom: 10px; 
+    max-width: 50%;
+  }
+
+  .house-info {
+    margin-left: 20px; 
+  }
+
+  .booking-link {
+    padding: 6px 10px; 
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa con piscina</title>
+    <link rel="stylesheet" href="visualizza_casa.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png">
+        <ul class="menu">
+            <li><a href="catalogo.html">Torna alle case in catalogo</a></li>
+        </ul>
+        
+    </div>
+
+    <div class="container">
+
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="mare1.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="mare2.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="mare3.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="mare4.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="mare5.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="mare6.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="mare7.jpg" alt="Casa">
+            </div>
+        </div>
+        <p>Goditi la vita marina nella nostra affascinante casa a Gioiosa Marea. Con una metratura di 150 mq, questa residenza marittima vanta 2 camere da letto e 3 bagni, offrendo uno spazio rilassante e accogliente per vivere a stretto contatto con il mare.</p>
+        <p>Le foto catturano la serenità degli interni, dove tonalità rilassanti e arredi pensati creano un'atmosfera vacanziera. Con una posizione fronte mare, potrai ammirare tramonti mozzafiato dal comfort della tua casa. Approfitta della brezza marina e delle spiagge a pochi passi, immergendoti completamente nella bellezza di Gioiosa Marea. Questa casa al mare ti offre un rifugio idilliaco per un'esperienza balneare indimenticabile.
+            Sono ammessi animali;
+            Max 6 persone;
+        </p>
+
+
+        <form class="booking-form">
+            <h2>Prenota la tua permanenza</h2>
+
+            <div class="date-input">
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" oninput="updateTotal()">
+            </div>
+
+            <div class="date-input">
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" oninput="updateTotal()">
+            </div>
+
+            <label for="total-price">Totale:</label>
+            <span id="total-price">0</span> Euro
+
+            <button type="button" onclick="book()" class="button">Prenota</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="visualizza_casa.js"></script>
+    
+</body>
+</html>

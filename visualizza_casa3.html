@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa con piscina</title>
+    <link rel="stylesheet" href="visualizza_casa.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png">
+        <ul class="menu">
+            <li><a href="catalogo.html">Torna alle case in catalogo</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="casa3.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="roma1.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="roma2.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="roma3.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="roma4.jpg" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="roma5.jpg" alt="Casa">
+            </div>
+        </div>
+
+        <p>Esplora il cuore pulsante di Roma con la nostra elegante casa nel centro storico. Con una metratura di 90 mq, questa residenza urbana dispone di 1 camere da letto e 1 bagni, offrendo un'esperienza di vita unica nel contesto della Città Eterna.</p>
+        <p>Le immagini catturano l'atmosfera cosmopolita degli interni raffinati, dove il design moderno si sposa con il fascino dell'architettura classica. Con una posizione privilegiata, sarai immerso nella storia e nella cultura di Roma, con i principali monumenti e le vie dello shopping a breve distanza. Vivi la dolce vita romana in questa casa centralissima, dove il comfort e lo stile si fondono in un'esperienza senza paragoni.
+            Sono ammessi animali di piccola taglia;
+            Max 4 persone;
+        </p>
+
+
+        <form class="booking-form">
+            <h2>Prenota la tua permanenza</h2>
+
+            <div class="date-input">
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" oninput="updateTotal()">
+            </div>
+
+            <div class="date-input">
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" oninput="updateTotal()">
+            </div>
+
+            <label for="total-price">Totale:</label>
+            <span id="total-price">0</span> Euro
+
+            <button type="button" onclick="book()" class="button">Prenota</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="visualizza_casa.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa con piscina</title>
+    <link rel="stylesheet" href="visualizza_casa.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png">
+        <ul class="menu">
+            <li><a href="catalogo.html">Torna alle case in catalogo</a></li>
+        </ul>
+       
+    </div>
+
+    <div class="container">
+
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="chalet1.jpg.webp" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="chalet2.jpg.webp" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="chalet3.jpg.webp" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="chalet4.jpg.webp" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="chalet5.jpg.webp" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="chalet6.jpg.webp" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="chalet7.jpg.webp" alt="Casa">
+            </div>
+            <div class="photo-card">
+                <img src="chalet8.jpg.webp" alt="Casa">
+            </div>
+        </div>
+
+        <p>Immergiti nell'atmosfera incantevole delle Dolomiti con il nostro affascinante chalet alpino. Con una metratura di 120 mq, questo chalet offre un'esperienza unica di montagna, con 2 accoglienti camere da letto e 2 bagni per garantire il massimo comfort.</p>
+        <p>Le foto catturano la magia degli interni rustici, dove il legno caldo si fonde con dettagli tradizionali e moderni. Goditi il panorama mozzafiato delle Dolomiti dalla tua finestra e rilassati accanto al camino. Questo chalet offre un rifugio di lusso tra le vette alpine, creando il luogo ideale per una vacanza indimenticabile.
+        Sono ammessi animali;
+        Max. 4 persone</p>
+
+
+        <form class="booking-form">
+            <h2>Prenota la tua permanenza</h2>
+
+            <div class="date-input">
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" oninput="updateTotal()">
+            </div>
+
+            <div class="date-input">
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" oninput="updateTotal()">
+            </div>
+
+            <label for="total-price">Totale:</label>
+            <span id="total-price">0</span> Euro
+
+            <button type="button" onclick="book()" class="button">Prenota</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="visualizza_casa.js"></script>
+</body>
+</html>
